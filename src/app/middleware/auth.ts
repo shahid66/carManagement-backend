@@ -30,6 +30,7 @@ const auth = (...requiredRoles: UserRole[]) => {
     }
 
     const { role, email } = decoded;
+   
 
     // checking if the user is exist
     const user = await User.isUserExistsByCustomId(email);
